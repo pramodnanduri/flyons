@@ -9,9 +9,7 @@ $().ready(
 			});
 			
 			$(document).click(function(e){
-				clickX = e.pageX;
-				clickY = e.pageY;
-				animate(clickX,clickY);
+				animateAtMouseClick(e);
 			});
 
 		});
@@ -27,6 +25,7 @@ function animate(x,y)
 	$('#element-right').animate({"right":docWidth-x ,"top":y},"slow");
 	$('#element-left-bottom').animate({"left":x ,"bottom":docHeight-y},"slow");
 	$('#element-right-bottom').animate({"right":docWidth-x ,"bottom":docHeight-y},"slow");
+	
 }
 
 function animateAtCenter()
@@ -36,9 +35,21 @@ function animateAtCenter()
 	animate(docWidth, docHeight);
 }
 
-function animateAtMouseClick()
+function resetAnimator()
 {
-	
+	$('#pmdanimation').hide();
+	$('#element-left').css({"left":0 ,"top":0},"slow");
+	$('#element-right').css({"right":0 ,"top":0},"slow");
+	$('#element-left-bottom').css({"left":0 ,"bottom":0},"slow");
+	$('#element-right-bottom').css({"right":0 ,"bottom":0},"slow");
+}
+
+function animateAtMouseClick(e)
+{
+	resetAnimator();
+	clickX = e.pageX;
+	clickY = e.pageY;
+	animate(clickX,clickY);
 }
 
 
