@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+
+#element-left {
+	width: 40px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	background-color: #cdd;
+	border-bottom-right-radius: 5px;
+}
+
+#element-right {
+	width: 40px;
+	height: 40px;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+	background-color: #ded;
+	border-bottom-left-radius: 5px;
+}
+
+#element-left-bottom {
+	width: 40px;
+	height: 40px;
+	left: 0px;
+	bottom: 0px;
+	position: absolute;
+	background-color: #ddd;
+	border-top-right-radius: 5px;
+}
+
+#element-right-bottom {
+	width: 40px;
+	height: 40px;
+	right: 0px;
+	bottom: 0px;
+	position: absolute;
+	background-color: #dde;
+	border-top-left-radius: 5px;
+}
+
+#logger {
+	min-width: 200px;
+	min-height: 40px; position : absolute;
+	border: 1px solid #ddd;
+	position: absolute;
+}
