@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="Flyons">
+<<<<<<< HEAD
         <wb-resource deploy-path="/" source-path="/src"/>
+=======
+        <wb-resource deploy-path="/" source-path="/WebContent"/>
+>>>>>>> b6fafcc9b1cac97c29e3fc3384f929bebe4f2f87
         <property name="context-root" value="Flyons"/>
     </wb-module>
 </project-modules>

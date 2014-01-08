@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+<<<<<<< HEAD
 	<classpathentry kind="src" path="src"/>
+=======
+	<classpathentry kind="src" path="WebContent"/>
+>>>>>>> b6fafcc9b1cac97c29e3fc3384f929bebe4f2f87
 	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.WebProject">
 		<attributes>
