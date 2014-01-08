@@ -1,0 +1,70 @@
+<html>
+
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="assets/js/fly.js"></script>
+
+<style>
+</style>
+<body>
+
+	The changed content from pmd-office A new line added at 2.33pm Lets see
+	the changes. this is the change
+
+	<div>
+		<button id="flyButton">Fly it up!</button>
+	</div>
+	
+	<div>
+		<button id="pageFadeBtn" onclick = "fadePage();">Fade Page!</button>
+	</div>
+
+<!-- 	<div id="logger"></div>
+ -->
+	<div id="pmdanimation" style="display: none;">
+		<div id="element-left"></div>
+		<div id="element-right"></div>
+		<div id="element-left-bottom"><button onclick="resetPage()">x</button></div>
+		<div id="element-right-bottom"></div>
+	</div>
+	
+	<div class="flyWindow" id="flyId">
+		The content inside the fly window which ever you want
+	</div>
+	
+	
+	<div>
+		<a id="flyTriggerR" href="#">Fly Right</a><br>
+		<a id="flyTriggerD" href="#">Fly Down</a><br>
+		<a id="flyTrigger" href="#">Fly Up</a><br>
+		<a id="flyTrigger" href="#">Fly Left</a><br>
+	</div>
+	
+	<div id="flyWindow" >
+		
+	</div>
+	
+
+	<script>
+		$('#flyTriggerR').click(function(){
+			$('#flyId').flyRight();
+		});
+		
+		$('#flyTriggerD').click(function(){
+			$('#flyId').flyDown();
+		});
+				
+		//Element.prototype.fly = function() {alert(this.value);}
+		//$('#flyId').fly();
+		//$('#flyId').flyRight();
+	</script>
+
+	<script type="text/javascript" src=""></script>
+
+</body>
+
+</html>
+
+
+
+
